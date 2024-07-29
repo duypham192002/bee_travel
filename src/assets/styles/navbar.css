@@ -1,0 +1,112 @@
+/*navbar.css*/
+
+.navbar {
+  display: flex; /* Sử dụng flexbox để xếp các phần tử ngang hàng */
+  justify-content: center; /* Canh các phần tử theo chiều ngang */
+  align-items: center; /* Canh các phần tử theo trục dọc */
+  margin-top: -100px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center; /* Canh các phần tử theo trục dọc */
+  padding: 5rem;
+}
+
+.logo {
+  width: 30%;
+  height: 100%;
+  margin-left: -55px;
+}
+.nav-menu a {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  width: 120px;
+  height: 16px;
+  /* identical to box height, or 100% */
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.nav-menu a:hover {
+  color: #f66f4d;
+}
+
+.nav-btn {
+  width: 184px;
+  height: 54px;
+  border: 1.4px solid #f66f4d;
+  border-radius: 27px;
+  background: none;
+  cursor: pointer; /* Hiển thị biểu tượng con trỏ khi di chuột */
+  margin-left: 16rem; /* Canh nút về phía bên phải */
+}
+
+.nav-btn span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #f66f4d;
+}
+
+.nav-btn:hover {
+  transition: 0.5s;
+  background-color: #f66f4d;
+  border-color: #f66f4d;
+  color: white;
+}
+
+.nav-btn:hover span {
+  color: white;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .logo {
+    width: 30%;
+    height: 100%;
+    margin-left: -55px;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+    height: 54px;
+    box-sizing: border-box;
+    border: 1.4px solid #f66f4d;
+    border-radius: 27px;
+    background: none;
+    cursor: pointer;
+    margin-left: 15rem;
+  }
+
+  .nav-btn span {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #f66f4d;
+  }
+
+  .nav-btn:hover {
+    transition: 0.5s;
+    background-color: #f66f4d;
+    border-color: #f66f4d;
+    color: white;
+  }
+
+  .nav-btn:hover span {
+    color: white;
+  }
+}

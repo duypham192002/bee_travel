@@ -1,0 +1,76 @@
+/*countries.css*/
+
+/* Phần tiêu đề */
+
+.countries-content {
+  margin-top: 100px;
+}
+
+.section-top {
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+  /* Điều chỉnh vị trí */
+}
+
+/* Tiêu đề */
+/* Tiêu đề */
+.countries-title {
+  /* Điều chỉnh vị trí */
+  gap: 0px;
+  font-family: Inter;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* Mô tả */
+.countries-description {
+  /* Điều chỉnh vị trí */
+  padding: 0 0 0 6.5rem;
+  gap: 0px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin-top: -15px;
+}
+
+/* Phần danh sách quốc gia */
+.countries-list {
+  width: 100%;
+  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+  gap: 0px;
+  justify-content: center;
+}
+
+/* Hình ảnh quốc gia */
+.country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px; /* Độ rộng của mỗi quốc gia */
+  margin: 10px; /* Khoảng cách giữa các quốc gia */
+}
+
+.country img {
+  width: 100%; /* Ảnh chiếm toàn bộ độ rộng của thẻ cha */
+  height: 100%; /* Tự động tính toán chiều cao để giữ tỷ lệ khung hình */
+  border-radius: 1000px; /* Bo tròn các góc của ảnh */
+  margin-bottom: 10px; /* Khoảng cách giữa ảnh và tên quốc gia */
+}
+
+.country-name {
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+}
+
+.countries-list {
+  display: flex;
+}

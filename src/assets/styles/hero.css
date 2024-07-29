@@ -1,0 +1,89 @@
+/*hero.css*/
+
+/* Phần chia layout của hero */
+.hero-content {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Thay đổi từ giá trị cố định sang phần trăm */
+  height: auto;
+  justify-content: center;
+}
+
+/* Phần tiêu đề của hero */
+.hero-title {
+  /* Explore the Best Place Now */
+
+  font-family: "Sen";
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 86px;
+  /* or 102% */
+
+  color: #2d3134;
+}
+
+/* Phần mô tả của hero */
+.hero-description {
+  /* Plan your schedule and start to explore world. BeeTravel helps you to get great offers. For more offer you can alway contact with us */
+
+  width: 80%; /* Thay đổi từ giá trị cố định sang phần trăm */
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #5b5f62;
+}
+
+.hero-image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%; /* Thay đổi từ giá trị viewport sang phần trăm */
+  max-width: 50%; /* Giảm tỉ lệ của ảnh khi màn hình giảm */
+  max-height: 50%; /* Giảm tỉ lệ của ảnh khi màn hình giảm */
+}
+
+.hero-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%; /* Thay đổi từ giá trị viewport sang phần trăm */
+}
+
+/* Nút của hero */
+.btn-hero {
+  width: 184px; /* Thay đổi từ giá trị cố định sang phần trăm */
+  padding: 20px; /* Thêm padding để tăng kích thước của nút */
+  border: 1.4px solid #f66f4d;
+  border-radius: 27px;
+  background: none;
+  cursor: pointer;
+  transition: 0.5s; /* Thêm transition vào trạng thái ban đầu */
+}
+
+.btn-hero span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px; /* Tăng kích thước font để làm cho nút to hơn */
+  line-height: 24px; /* Tăng line-height để phù hợp với font-size mới */
+  text-align: center;
+  color: orange;
+}
+
+.btn-hero:hover {
+  background-color: #f66f4d;
+  border-color: #f66f4d; /* Thêm border-color vào để có hiệu ứng chuyển đổi */
+}
+
+/* Chọn phần tử span của .nav-btn khi hover */
+.btn-hero:hover span {
+  color: white;
+}

@@ -1,0 +1,186 @@
+.destination-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: left;
+}
+
+.destination {
+  display: flex;
+}
+
+.destination-left,
+.destination-right {
+  padding: 10px; /* Giảm padding xuống còn 10px */
+  position: relative;
+}
+
+.destination-right {
+  margin-left: 5rem; /* Giảm margin-left xuống còn 5rem */
+}
+
+.destination-point {
+  /* Destination Points */
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+  letter-spacing: 0.14em;
+  color: #f66f4d;
+}
+
+.destination-title {
+  font-family: Inter;
+  font-size: 56px;
+  line-height: 70px;
+  text-align: left;
+  /*Dịch lên trên*/
+  margin-top: -30px;
+}
+
+.destination-description {
+  width: 500px;
+}
+
+.description-content {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 26px; */
+  size: 16px;
+  margin-top: -30px;
+  width: 500px;
+}
+
+.destination-image img {
+  /* luther-m-e-bottrill-6_Ebd_ShifQ-unsplash 1 */
+  width: 450px;
+  height: 450px;
+  border-radius: 1000px;
+}
+
+.card-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  /* height: 100px; */
+  height: 200px;
+  margin-top: -30px;
+}
+
+.card-title {
+  /* 10+ */
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 40px;
+  /* line-height: 10px; */
+  /* identical to box height, or 100% */
+  color: #f66f4d;
+}
+
+.card-title h3 {
+  margin: 0;
+}
+
+.card-description {
+  margin-top: 10px;
+  line-height: 10px;
+}
+
+.card-description p {
+  margin: 5px 0;
+}
+
+.card {
+  border: 2px solid none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  /* margin-right:; */
+}
+
+.top-card {
+  position: absolute;
+  top: 0;
+  left: 0; /* Đặt vị trí bên trái */
+  width: 7rem;
+  height: 9rem; /* Độ cao của khung hình chữ nhật */
+  border: none; /* Đường viền */
+  border-radius: 5px;
+  background: #ffffff;
+  z-index: 1; /* Đảm bảo nó nằm trên các phần tử khác */
+  text-align: center;
+}
+
+.top-card-content h3 {
+  color: #f66f4d;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.top-card-content svg {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: linear-gradient(165.91deg, #ffecc9 10.03%, #ffd482 139.08%);
+
+  border-radius: 500px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.top-card-description {
+  font-size: 16px;
+  margin-top: -20px;
+}
+
+.bot-card {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  right: 0; /* Đặt ở bên phải */
+  background: #ffffff;
+  /*Nhích lên trên và đè lên destination-img */
+  margin-top: -6rem; /* Điều chỉnh giá trị margin-top */
+  z-index: 1; /* Đảm bảo nó nằm trên destination-image */
+}
+
+.bot-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bot-card-content {
+  display: flex;
+  align-items: center;
+}
+
+.bot-card-content img {
+  width: 30px;
+  height: auto;
+  /*Nằm chung hàng với h3*/
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.bot-card-content h3 {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.bot-card-description {
+  text-align: center;
+  /* margin-top: -30px; */
+  margin-left: 55px;
+  font-size: 14px;
+}
